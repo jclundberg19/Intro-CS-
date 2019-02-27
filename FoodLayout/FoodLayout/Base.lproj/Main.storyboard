@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-6u-y7Y">
+                                <rect key="frame" x="92" y="-1046" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Buritto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zf-y8-RvJ">
+                                <rect key="frame" x="305" y="20" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="steak" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-iZ-78i">
+                                <rect key="frame" x="20" y="61" width="196" height="294"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="buritto" translatesAutoresizingMaskIntoConstraints="NO" id="T3m-0e-1zZ">
+                                <rect key="frame" x="235.5" y="61" width="196" height="294"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="salmon" translatesAutoresizingMaskIntoConstraints="NO" id="BD3-FY-au1">
+                                <rect key="frame" x="451.5" y="61" width="195.5" height="294"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Salmon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhI-M9-wBy">
+                                <rect key="frame" x="519" y="20" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="Steak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMm-tO-kRk">
+                                <rect key="frame" x="94.5" y="20" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T3m-0e-1zZ" firstAttribute="height" secondItem="pvm-iZ-78i" secondAttribute="height" id="2KV-cx-5jA"/>
+                            <constraint firstItem="BD3-FY-au1" firstAttribute="height" secondItem="pvm-iZ-78i" secondAttribute="height" id="5Q3-83-P1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BD3-FY-au1" secondAttribute="trailing" constant="20" id="Eyk-vv-m79"/>
+                            <constraint firstItem="T3m-0e-1zZ" firstAttribute="leading" secondItem="pvm-iZ-78i" secondAttribute="trailing" constant="20" id="Prf-P3-WiU"/>
+                            <constraint firstItem="T3m-0e-1zZ" firstAttribute="width" secondItem="pvm-iZ-78i" secondAttribute="width" id="WdS-lb-BfZ"/>
+                            <constraint firstItem="2zf-y8-RvJ" firstAttribute="centerX" secondItem="T3m-0e-1zZ" secondAttribute="centerX" id="aA6-ON-kle"/>
+                            <constraint firstItem="hhI-M9-wBy" firstAttribute="centerX" secondItem="BD3-FY-au1" secondAttribute="centerX" id="bP5-Wi-hpc"/>
+                            <constraint firstItem="pvm-iZ-78i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dQP-vd-que"/>
+                            <constraint firstItem="tUh-6u-y7Y" firstAttribute="centerX" secondItem="pvm-iZ-78i" secondAttribute="centerX" id="dcq-I7-kUS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pvm-iZ-78i" secondAttribute="bottom" constant="20" id="eMZ-nj-fFt"/>
+                            <constraint firstItem="aMm-tO-kRk" firstAttribute="centerX" secondItem="pvm-iZ-78i" secondAttribute="centerX" id="ghA-ek-ikt"/>
+                            <constraint firstItem="T3m-0e-1zZ" firstAttribute="leading" secondItem="pvm-iZ-78i" secondAttribute="trailing" constant="20" id="hNk-tM-aQs"/>
+                            <constraint firstItem="BD3-FY-au1" firstAttribute="leading" secondItem="T3m-0e-1zZ" secondAttribute="trailing" constant="20" id="kZO-KP-12W"/>
+                            <constraint firstItem="pvm-iZ-78i" firstAttribute="top" secondItem="tUh-6u-y7Y" secondAttribute="bottom" constant="20" id="lLX-nE-R8k"/>
+                            <constraint firstItem="BD3-FY-au1" firstAttribute="leading" secondItem="T3m-0e-1zZ" secondAttribute="trailing" constant="20" id="nBj-AW-Gxk"/>
+                            <constraint firstItem="BD3-FY-au1" firstAttribute="width" secondItem="pvm-iZ-78i" secondAttribute="width" id="sLM-Gb-DSU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="133.59999999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buritto" width="2048" height="1360"/>
+        <image name="salmon" width="1500" height="996"/>
+        <image name="steak" width="600" height="750"/>
+    </resources>
+</document>
